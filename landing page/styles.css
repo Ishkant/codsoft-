@@ -1,0 +1,286 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #333333;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('new-hero-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: -1;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero button:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+}
+
+
+.content {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    animation: fadeIn 1s ease-out;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.column h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.column p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.cta {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: fadeInDown 1s ease-out;
+}
+
+.cta p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-out;
+}
+
+.cta button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.cta button:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #333333;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: inline-block;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
