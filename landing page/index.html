@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Landing Page</title>
+    <title>Web Development Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>MY Website</h1>
+            <div class="logo">
+                <img src="logo.jpg" alt="WebDev Logo">
+                <span>WebDev</span>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="signup-btn">Get Started</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section class="hero" id="hero">
+    <section class="hero">
         <div class="container">
-            <h2>Welcome to Our Landing Page</h2>
-            <p>Your journey to a better web experience starts here</p>
-            <button>Get Started</button>
+            <div class="hero-text">
+                <h1>Professional Web Development Services</h1>
+                <p>We create beautiful and functional websites that elevate your business.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Web Development">
+            </div>
         </div>
     </section>
-
-    <section class="content" id="features">
+    <section class="features">
         <div class="container">
-            <h3>Features</h3>
-            <div class="columns">
-                <div class="column">
-                    <h4>Feature One</h4>
-                    <p>High-Quality service with professional support.</p>
+            <h2>Our Services</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="logo.jpg" alt="Feature 1">
+                    <h3>Responsive Design</h3>
+                    <p>Our designs adapt to any screen size for a seamless user experience.</p>
                 </div>
-                <div class="column">
-                    <h4>Feature Two</h4>
-                    <p>Innovative solutions for your needs.</p>
+                <div class="feature">
+                    <img src="logo.jpg" alt="Feature 2">
+                    <h3>Custom Development</h3>
+                    <p>We build custom solutions tailored to your specific business needs.</p>
                 </div>
-                <div class="column">
-                    <h4>Feature Three</h4>
-                    <p>Reliable and efficient service delivery.</p>
+                <div class="feature">
+                    <img src="logo.jpg" alt="Feature 3">
+                    <h3>SEO Optimization</h3>
+                    <p>Our SEO strategies help your website rank higher in search results.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="cta" id="about">
+    <section class="cta">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Learn more about what we do and our mission to provide the best service.</p>
-            <button>Read More</button>
+            <h2>Ready to Start Your Project?</h2>
+            <p>Contact us today to get a free quote and start building your dream website.</p>
+            <button>Contact Us</button>
         </div>
     </section>
-
-    <footer id="contact">
+    <footer>
         <div class="container">
-            <p>Contact us at <a href="mailto:info@bMY Website.com">info@MY Website.com</a></p>
-            <p>&copy; 2024 MY Website. All rights reserved.</p>
+            <p>&copy; 2024 WebDev. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="link.png" alt="LinkedIn"></a>
+            </div>
         </div>
     </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
